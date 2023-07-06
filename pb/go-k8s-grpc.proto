@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "k8s-grpc-go/pb";
+package pb;
+
+service ExampleService {
+	rpc Service(ExampleRequest) returns (ExampleResponse);
+  }
+
+message ExampleRequest {
+	string req = 1;
+}
+
+message ExampleResponse {
+	string result = 1;
+}
