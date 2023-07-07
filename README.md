@@ -1,8 +1,8 @@
 ## k8s-grpc-go
-实现grpc-go在k8s中动态负载均衡
+实现grpc-go在k8s中动态负载均衡的方法
 ### 1. `client-go` + `Custom Name Resolution`
 	自定义name resolver，通过client-go动态监听指定endpoint变更并更新resolver连接状态，实现动态负载均衡
-
+---
 ### 2. 修改默认dns resolver源代码
 **变量:**
 
